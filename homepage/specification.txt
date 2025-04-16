@@ -1,0 +1,36 @@
+### **HTML Tags (10)**
+
+1. `<html>` – Root element of the page
+2. `<head>` – Contains metadata and links to external files
+3. `<body>` – The visible content of the page
+4. `<title>` – The title of the page displayed in the browser tab
+5. `<nav>` – Navigation elements (e.g., for menus)
+6. `<a>` – Link to other pages
+7. `<div>` – Container for other elements
+8. `<img>` – For inserting images
+9. `<section>` – Section on the page, e.g., for different areas like projects or contact
+10. `<footer>` – The footer section of the page (e.g., copyright info or contact)
+
+---
+
+### **CSS Properties (5)**
+
+1. `background-color` – Background color of the page and specific elements
+2. `color` – Text color
+3. `font-size` – Font size for the text
+4. `padding` – Inner spacing within containers or elements
+5. `border-radius` – Rounded corners for buttons and cards
+
+---
+
+### **JavaScript Feature**
+
+- I implemented a **Dark Mode Toggle** that allows the user to switch between a light and dark mode. This was achieved through a simple JavaScript script that adds or removes the `dark-mode` class upon toggling the switch, dynamically changing the design of the page.
+
+---
+
+### **Bootstrap Feature**
+
+- I used **Bootstrap's grid system** for the layout to make the page responsive. Specifically, I used Bootstrap components like `navbar` for the navigation menu and `btn-primary` for buttons to quickly and easily style the page.
+
+---

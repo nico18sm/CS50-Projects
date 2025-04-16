@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h2 class="mb-4">Your Portfolio</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Current Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in portfolio %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.shares }}</td>
+                    <td>${{ '%.2f' | format(stock.price) }}</td>
+                    <td>${{ '%.2f' | format(stock.total) }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p><strong>Cash:</strong> ${{ '%.2f' | format(cash) }}</p>
+    <p><strong>Total Portfolio Value:</strong> ${{ '%.2f' | format(total) }}</p>
+{% endblock %}

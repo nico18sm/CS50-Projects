@@ -1,0 +1,100 @@
+/* Hintergrundfarbe und Schrift */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #343a40;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Überschriften */
+  h1, h2, h3 {
+    color: #0056b3;
+    font-weight: 600;
+  }
+
+  /* Navigationsleiste */
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Buttons */
+  .btn, .nav-link {
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover, .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+
+  /* Karten (z. B. auf der Über mich Seite) */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #dee2e6;
+    padding: 20px;
+    margin-top: 60px;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+
+  /* Profilbild */
+  img.rounded-circle {
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Eigener Button-Stil */
+  .custom-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .dark-mode .navbar,
+  .dark-mode .jumbotron,
+  .dark-mode .bg-light,
+  .dark-mode footer {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+  }
+
+  .dark-mode .btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+  }
+
+  .toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+  }

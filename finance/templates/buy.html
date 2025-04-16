@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="container mt-5">
+        <h2 class="mb-4">Buy Stocks</h2>
+
+        <form action="/buy" method="post">
+            <!-- Stock Symbol -->
+            <div class="mb-3">
+                <label for="symbol" class="form-label">Stock Symbol</label>
+                <input id="symbol" name="symbol" type="text" class="form-control form-control-lg" placeholder="e.g. AAPL" required>
+            </div>
+
+            <!-- Number of Shares -->
+            <div class="mb-3">
+                <label for="shares" class="form-label">Number of Shares</label>
+                <input id="shares" name="shares" type="number" class="form-control form-control-lg" min="1" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-lg w-100">Buy</button>
+        </form>
+    </div>
+{% endblock %}

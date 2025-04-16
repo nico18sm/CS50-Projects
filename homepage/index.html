@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willkommen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="index.html">Mein Portfolio</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projekte</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="jumbotron text-center bg-primary text-white mb-5">
+    <h1 class="display-4">Willkommen auf meiner Seite!</h1>
+    <a href="projects.html" class="btn btn-light btn-lg mt-3">Zu meinen Projekten</a>
+  </header>
+
+  <!-- Über mich kurz -->
+  <section class="container mb-5">
+    <h2 class="text-center mb-4">Wer bin ich?</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="portfolie-image-fotor-20240307231013.png" alt="Profilbild" class="img-fluid rounded-circle" width="200">
+      </div>
+      <div class="col-md-8">
+        <p>Ich heiße Max Mustermann, bin 20 Jahre alt und aktuell in der Ausbildung zum Fachinformatiker für Anwendungsentwicklung. Mein Fokus liegt auf Frontend-Technologien wie HTML, CSS, JavaScript sowie modernen Frameworks wie React und SvelteKit.</p>
+        <p>Ich arbeite zielstrebig, lerne gerne neue Dinge und liebe es, durch Code Probleme zu lösen und Ideen umzusetzen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projekte-Vorschau -->
+  <section class="container mb-5">
+    <h2 class="text-center mb-4">Projekte</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">Meine persönliche Portfolio-Seite – mit Bootstrap, interaktiven Elementen und responsivem Design.</p>
+            <a href="projects.html" class="btn btn-primary">Mehr erfahren</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Sprach-Quiz App</h5>
+            <p class="card-text">Eine React-basierte App zum Sprachenlernen, die mit einer externen API interagiert.</p>
+            <a href="projects.html" class="btn btn-primary">Mehr erfahren</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Task Tracker</h5>
+            <p class="card-text">Eine To-Do App mit LocalStorage, geschrieben in Vanilla JavaScript – leicht, schnell und ohne Framework.</p>
+            <a href="projects.html" class="btn btn-primary">Mehr erfahren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-light py-5 text-center">
+    <h3>Du hast ein Projekt oder willst mit mir arbeiten?</h3>
+    <p class="mb-3">Ich freue mich über jede Nachricht – egal ob Feedback, Fragen oder konkrete Aufträge!</p>
+    <a href="contact.html" class="btn btn-success">Kontakt aufnehmen</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5">
+    <p>&copy; 2025 Max Mustermann – All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleSwitch = document.getElementById("darkModeToggle");
+    toggleSwitch.addEventListener("change", function () {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+
+</body>
+</html>
