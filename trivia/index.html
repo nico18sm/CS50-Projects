@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which planet is known as the Red Planet?</h3>
+                <div id="mcq">
+                  <button class="answer" data-correct="false">Earth</button>
+                  <button class="answer" data-correct="true">Mars</button>
+                  <button class="answer" data-correct="false">Jupiter</button>
+                </div>
+                <p id="mcq-result"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the capital of France?</h3>
+                <input type="text" id="free-response" placeholder="Your answer">
+                <button id="submit-answer">Submit</button>
+                <p id="text-result"></p>
+
+                <script>
+
+                    // Part 1: Multiple Choice
+const answerButtons = document.querySelectorAll(".answer");
+const mcqResult = document.getElementById("mcq-result");
+
+answerButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Reset button styles
+    answerButtons.forEach(b => b.classList.remove("correct", "incorrect"));
+    mcqResult.textContent = "";
+
+    const isCorrect = button.dataset.correct === "true";
+    if (isCorrect) {
+      button.classList.add("correct");
+      mcqResult.textContent = "Correct!";
+      button.style.backgroundColor = "#4CAF50";
+    } else {
+      button.classList.add("incorrect");
+      mcqResult.textContent = "Incorrect";
+      button.style.backgroundColor = "#f44336";
+    }
+  });
+});
+
+// Part 2: Free Response
+const input = document.getElementById("free-response");
+const submit = document.getElementById("submit-answer");
+const textResult = document.getElementById("text-result");
+
+submit.addEventListener("click", () => {
+  const userAnswer = input.value.trim().toLowerCase();
+  input.classList.remove("correct", "incorrect");
+  textResult.textContent = "";
+
+  if (userAnswer === "paris") {
+    input.classList.add("correct");
+    textResult.textContent = "Correct!";
+    input.style.border = "2px solid #4CAF50" // Green
+  } else {
+    input.classList.add("incorrect");
+    textResult.textContent = "Incorrect";
+    input.style.border = "2px solid #f44336" // Red
+  }
+});
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
