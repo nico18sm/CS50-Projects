@@ -1,0 +1,5 @@
+1. **Characterizing the Audio Aura:**
+   The listener’s audio aura can be characterized by the average **energy**, **valence**, and **danceability** of their top 100 songs. High **energy** would indicate a preference for dynamic and upbeat music, **valence** would show if they lean toward positive or negative moods, and **danceability** reflects their taste for rhythmic and danceable tunes.
+
+2. **Why This Calculation Might Not Be Representative:**
+   This method may not fully represent the listener because it only averages three attributes and treats all songs equally, ignoring song popularity or listening frequency. It doesn’t account for genre diversity or changes in listening habits over time. A better approach could involve weighting songs by how often they are played or analyzing genres and lyrics to get a more nuanced view of the listener's mood and preferences.

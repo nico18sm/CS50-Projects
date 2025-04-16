@@ -1,0 +1,37 @@
+sort1 uses: bubble sort
+
+How do you know?: It starts with the first element in the row and check if any value in the row is bigger than the first value, if there is any smaler than the first it will swap the element. then it goes to the next value in the array and repeat the steps. the algorithem repeats until the last array is sorted. the timecomplexity is n2. It use this algorithem because its quite fast with small data and the logic is very easy to implement.
+
+sort2 uses: merge sort
+
+How do you know?: this algorithem cut every value into one array and checks if the first number bigger is than the second, this goes until every value is checked with the other value. then it checks what array is bigger and then merge with other array. this algorithem do it until its one sorted array at the end. the timecomplexity is n log n. its also the worst case. it is use because its very good with very big data.
+
+sort3 uses: selection sort
+
+How do you know?: it starts with the first value and check it with the next value, if the second is bigger it will swap. then it goes to the next value and check if the next value in the row is bigger than the other. this algorithem repeats until all values are in the right order. the timecomplexity is n2; it is use because its good for middle smal problems. because the timecomplexity is verry high if its the worst case but it can be very fast at small arrays with a little bit of luck;
+
+
+sort1 bubble
+random5000 = real    0m0,082s
+random10000 = real    0m0,207s
+random50000 = real    0m6,593s
+
+sort1
+random5000 = real    0m0,035s
+random10000 =real    0m0,040s
+random50000 =real    0m0,299s
+
+
+sort3 selection
+random5000 = real    0m0,059s
+random10000 =real    0m0,148s
+random50000 =real    0m2,867s
+
+sort3
+real    0m0,040s
+real    0m0,157s
+real    0m2,554s
+
+
+
+
